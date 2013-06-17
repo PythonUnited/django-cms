@@ -160,7 +160,7 @@ def post_save_user_group(instance, raw, created, **kwargs):
 if get_cms_setting('PERMISSION'):
     # only if permissions are in use
 #    from django.contrib.auth.models import Group
-    from django.contrib.auth.models import User, Group
+    from django.contrib.auth.models import  Group
     # register signals to user related models
     from cms.compat import User
     signals.post_save.connect(post_save_user, User)
