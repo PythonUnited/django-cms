@@ -2,6 +2,7 @@ from __future__ import with_statement
 from cms.api import (_generate_valid_slug, create_page, _verify_plugin_type, 
     assign_user_to_page, publish_page)
 from cms.apphook_pool import apphook_pool
+from cms.compat import User
 from cms.models.pagemodel import Page
 from cms.plugin_base import CMSPluginBase
 from cms.plugins.text.cms_plugins import TextPlugin
@@ -10,7 +11,7 @@ from cms.test_utils.util.context_managers import SettingsOverride
 from cms.test_utils.util.menu_extender import TestMenu
 from cms.test_utils.util.mock import AttributeObject
 from cms.tests.apphooks import APP_MODULE, APP_NAME
-from django.contrib.auth.models import User, Permission
+from django.contrib.auth.models import Permission
 from django.contrib.contenttypes.models import ContentType
 from django.test.testcases import TestCase
 from menus.menu_pool import menu_pool

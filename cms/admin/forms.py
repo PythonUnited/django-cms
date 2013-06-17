@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from cms import constants
 from cms.apphook_pool import apphook_pool
+from cms.compat import User
 from cms.forms.widgets import UserSelectAdminWidget
 from cms.models import (Page, PagePermission, PageUser, ACCESS_PAGE, 
     PageUserGroup, titlemodels)
@@ -14,7 +15,7 @@ from cms.utils.permissions import (get_current_user, get_subordinate_users,
 from cms.utils.urlutils import any_path_re
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import Permission, User
+from django.contrib.auth.models import Permission
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.sites.models import Site
 from django.core.exceptions import ValidationError

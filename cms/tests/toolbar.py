@@ -7,7 +7,8 @@ from cms.toolbar.items import (Anchor, TemplateHTML, Switcher, List, ListItem,
     GetButton)
 from cms.utils import get_cms_setting
 from django.conf import settings
-from django.contrib.auth.models import AnonymousUser, User, Permission
+from cms.compat import User
+from django.contrib.auth.models import AnonymousUser, Permission
 from django.core.urlresolvers import reverse
 from django.test.client import RequestFactory
 

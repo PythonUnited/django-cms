@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from cms.api import create_page_user
+from cms.compat import User
 from cms.test_utils.testcases import CMSTestCase
 from cms.utils.mail import mail_page_user_change
 from django.core import mail
 
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 
 
 class MailTestCase(CMSTestCase):

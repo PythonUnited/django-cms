@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from cms.plugins.text.models import Text
-from django.contrib.auth.models import User
+from cms.compat import User
+#from django.contrib.auth.models import User
 from cms.models import Page, CMSPlugin
 from django.core.urlresolvers import clear_url_caches
 from cms.test_utils.util.context_managers import SettingsOverride

@@ -19,7 +19,8 @@ from django.http import HttpRequest
 from django.template import RequestContext, Context
 from django.template.base import Template
 from django.utils.html import escape
-from django.contrib.auth.models import User
+from cms.compat import User
+#from django.contrib.auth.models import User
 
 
 class TemplatetagTests(TestCase):
